@@ -1,0 +1,4 @@
+image	background	background.png
+font 	font_default	arial.ttf 32
+image   checkbox    checkbox.png
+image   checkmark   checkmark.png
