@@ -6,6 +6,7 @@ module Gosuplus
     end
 
     def load_resources
+      @state_name.slice! "Gosuplus::"
       filepath = "./lib/states/#{@state_name}_resources.txt".downcase
       File.new(filepath, 'w') unless File.file?(filepath)
 
