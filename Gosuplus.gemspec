@@ -9,10 +9,6 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Freddan962"]
   spec.email         = ["fredde.sander@gmail.se"]
 
-  if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = ""
-  end
-
   spec.summary       = %q{Gosuplus is a extension for Gosu}
   spec.description   = %q{}
   spec.homepage      = "https://github.com/Freddan962/GosuPlus"
