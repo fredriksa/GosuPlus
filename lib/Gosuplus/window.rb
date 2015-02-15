@@ -1,10 +1,9 @@
 module Gosuplus
   class Window < Gosu::Window
-    def initialize
-      super 640, 480, false
-      self.caption = "GosuPlus"
+    def initialize(caption, width, height, fullscreen = false)
+      super width, height, fullscreen
+      self.caption = caption
       @state_manager = StateManager.new(self)
-      @state_manager.add(ExampleState.new(self, ResourceManager.new(self), StateInputHandler.new))
     end
 
     def update
