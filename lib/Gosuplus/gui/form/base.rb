@@ -1,24 +1,26 @@
-module GUI
-  module Form
-    class Base
-      def initialize(position, image, input_handler, key_id, font, text = nil)
-        @icon = Icon.new(image, position)
-        @input_handler, @key_id, @font = input_handler, key_id, font
+module Gosuplus
+  module GUI
+    module Form
+      class Base
+        def initialize(position, image, input_handler, key_id, font, text = nil)
+          @icon = Icon.new(image, position)
+          @input_handler, @key_id, @font = input_handler, key_id, font
 
-        @visible_text = text ? text : String
-        @actual_text = String
-      end
+          @visible_text = text ? text : String
+          @actual_text = String
+        end
 
-      def draw
+        def draw
 
-      end
+        end
 
-      def update(x, y)
+        def update(x, y)
 
-      end
+        end
 
-      def activated?(x, y)
+        def activated?(x, y)
 
+        end
       end
     end
   end
