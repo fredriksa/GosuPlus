@@ -6,15 +6,15 @@ module Gosuplus
     end
 
     def update
-      @states[@index].update
+      @states[@index].update if @states.size > 0
     end
 
     def draw
-      @states[@index].draw
+      @states[@index].draw if @states.size > 0
     end
 
     def handle_input(key, type)
-      @states[@index].handle_input(key, type)
+      @states[@index].handle_input(key, type) if @states.size > 0
     end
 
     def next
