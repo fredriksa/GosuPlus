@@ -6,4 +6,4 @@ module Gosuplus
       @x, @y = x, y
     end
   end
-module Gosuplus
+end

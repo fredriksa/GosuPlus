@@ -26,5 +26,9 @@ module Gosuplus
     def needs_cursor?
       true
     end
+
+    def add_state(state)
+      @state_manager.add(state)
+    end
   end
 end
