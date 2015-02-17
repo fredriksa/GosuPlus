@@ -8,8 +8,6 @@ module Gosuplus
       @image = image
     end
 
-    def update
-
-    end
+    def update; end
   end
 end
