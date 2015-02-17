@@ -2,6 +2,7 @@ module Gosuplus
   module GUI
     class Button
       attr_accessor :timer
+
       def initialize(position, image, input_handler, key_id, text = nil, font = nil)
         @icon = Icon.new(image, position)
         @input_handler, @key_id = input_handler, key_id
@@ -9,10 +10,11 @@ module Gosuplus
           @text = Text.new(text, font)
           @text.center(@icon)
         end
+        @visible = true
       end
 
       def draw
-        ButtonRenderer.draw(@icon, @text)
+        ButtonRenderer.draw(@icon, @text) if @visible
       end
 
       def update(x, y)
@@ -30,9 +32,10 @@ module Gosuplus
         @timer.update
       end
 
-      def active?
-        @active
-      end
+      def active?; @active; end
+      def visible?; @visible; end
+      def hide; @visible = false; end
+      def expose; @visible = true; end
 
       private
       def activated?(x, y)
