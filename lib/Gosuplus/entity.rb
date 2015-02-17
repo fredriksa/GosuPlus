@@ -1,7 +1,7 @@
 module Gosuplus
   class Entity
-    attr_accessor :id
     include DrawableRot
+    attr_accessor :id, :body
 
     def initialize(pos, image)
       @body = Body.new(pos, image.width, image.height)
@@ -9,7 +9,7 @@ module Gosuplus
     end
 
     def update
-      
+
     end
   end
 end
