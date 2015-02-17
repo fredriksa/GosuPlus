@@ -7,6 +7,7 @@ module Gosuplus
 
     def update
       @states[@index].update if @states.size > 0
+      next if @states[@index].finished
     end
 
     def draw

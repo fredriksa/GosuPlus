@@ -1,5 +1,7 @@
 module Gosuplus
   class State
+    attr_accessor :finished
+    
     def initialize(window, rm, input_handler)
       @window, @rm, @input_handler = window, rm, input_handler
       @GUI = GUI::GUI.new(GUIRenderer.new)
