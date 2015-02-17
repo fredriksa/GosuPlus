@@ -33,9 +33,3 @@ require_relative 'Gosuplus/gui/form/renderer'
 require_relative 'Gosuplus/gui/form/text'
 
 require_relative 'Gosuplus/states/example_state'
-
-module Gosuplus
-  def self.test
-    puts "TEST"
-  end
-end
