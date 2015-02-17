@@ -23,5 +23,8 @@ module Gosuplus
     def load; end
     def on_load; @rm.load_resources(self.class.name); load; end
     def on_exit; end
+
+    private
+    def add_entity(entity); @objects << entity; end
   end
 end
