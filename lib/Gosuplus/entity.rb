@@ -7,5 +7,9 @@ module Gosuplus
       @body = Body.new(pos, image.width, image.height)
       @image = image
     end
+
+    def update
+      
+    end
   end
 end
