@@ -20,14 +20,14 @@ module Gosuplus
 
     def next
       @states[@index].on_exit
-      @states[@index].on_load
       @index += 1
+      @states[@index].on_load
     end
 
     def previous
       @states[@index].on_exit
-      @states[@index].on_load
       @index -= 1
+      @states[@index].on_load
     end
 
     def add(state)
