@@ -27,7 +27,7 @@ module Gosuplus
     def previous
       @states[@index].on_exit
       @index -= 1
-      @states[@index].on_load
+      @states[@index].on_load 
     end
 
     def add(state)
