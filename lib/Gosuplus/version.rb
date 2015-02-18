@@ -1,3 +1,3 @@
 module Gosuplus
-  VERSION = "1.0.26"
+  VERSION = "1.0.261"
 end
